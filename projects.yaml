@@ -1,18 +1,15 @@
 projects:
-    - ../course/wrapped_rgb_mixer
-    - ../course/wrapped_frequency_counter
-    - /home/matt/work/asic-workshop/course/participants/jamieiles/a5-1-wb-macro
-    - /home/matt/work/asic-workshop/course/projects/7seg_wrapper
+    - /home/mike/GitHubRepos/MikeCovrado/z2a_project/main
 
 caravel:
-    root:           /home/matt/work/asic-workshop/caravel-mph
-    test_dir:       /home/matt/work/asic-workshop/caravel-mph/verilog/dv/caravel/user_proj_example/
-    rtl_dir:        /home/matt/work/asic-workshop/caravel-mph/verilog/rtl/
+    root:           /home/mike/GitHubRepos/MikeCovrado/caravel/mpw-one-b
+    test_dir:       /home/mike/GitHubRepos/MikeCovrado/caravel/mpw-one-b/verilog/dv/caravel/mike_proj
+    rtl_dir:        /home/mike/GitHubRepos/MikeCovrado/caravel/mpw-one-b/verilog/rtl
     config:         config.tcl
 
 openlane:
-    root:           /home/matt/work/asic-workshop/openlane_v09
-                    
+    root:           /home/mike/GitHubRepos/efabless/openlane
+
 wrapper:
     md5sum:         0ec8fdff7ae891b1b156030a841d1800
     interface:      interface.txt
@@ -20,9 +17,9 @@ wrapper:
     upw_template:   user_project_wrapper.sub.v
 
 env:
-    GCC_PATH:       /opt/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin/
-    GCC_PREFIX:     riscv64-unknown-elf
-    PDK_PATH:       /home/matt/work/asic-workshop/pdks_v09/sky130A
+    GCC_PATH:       /opt/ood-riscv32/bin
+    GCC_PREFIX:     riscv32-unknown-elf
+    PDK_PATH:       /opt/pdks/sky130A
 
 tests:
     gds:
