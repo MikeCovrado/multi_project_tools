@@ -1,14 +1,15 @@
 projects:
-    - /home/mike/GitHubRepos/MikeCovrado/z2a_project/main
+    - /home/michael/GitHubRepos/MikeCovrado/z2a_project/main
 
 caravel:
-    root:           /home/mike/GitHubRepos/MikeCovrado/caravel/mpw-one-b
-    test_dir:       /home/mike/GitHubRepos/MikeCovrado/caravel/mpw-one-b/verilog/dv/caravel/mike_proj
-    rtl_dir:        /home/mike/GitHubRepos/MikeCovrado/caravel/mpw-one-b/verilog/rtl
+    root:           /home/michael/GitHubRepos/MikeCovrado/caravel/caravel-mpw-one-b
+#    test_dir:       /home/michael/GitHubRepos/MikeCovrado/caravel/caravel-mpw-one-b/verilog/dv/caravel/serial_divider
+    test_dir:       /home/michael/GitHubRepos/MikeCovrado/caravel/caravel-mpw-one-b/verilog/dv/caravel/
+    rtl_dir:        /home/michael/GitHubRepos/MikeCovrado/caravel/caravel-mpw-one-b/verilog/rtl
     config:         config.tcl
 
 openlane:
-    root:           /home/mike/GitHubRepos/efabless/openlane/rc6
+    root:           /home/michael/GitHubRepos/efabless/openlane/rc6
 
 wrapper:
     md5sum:         0ec8fdff7ae891b1b156030a841d1800
@@ -17,7 +18,8 @@ wrapper:
     upw_template:   user_project_wrapper.sub.v
 
 env:
-    GCC_PATH:       /opt/ood-riscv32/bin
+#    GCC_PATH:       /opt/ood-riscv32/bin
+    GCC_PATH:       /opt/riscv32/bin
     GCC_PREFIX:     riscv32-unknown-elf
     PDK_PATH:       /opt/pdks/sky130A
 
